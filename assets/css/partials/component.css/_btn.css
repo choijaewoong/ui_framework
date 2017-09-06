@@ -1,0 +1,61 @@
+.btn-menu {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility .3s linear, opacity .3s linear;
+    transition: visibility .3s linear, opacity .3s linear ;
+}
+.btn-menu .middle-bar {
+    position: absolute;
+    top: 50%;
+    left:0;
+    width: 24px;
+    height:2px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #fff;
+}
+.btn-menu.on .middle-bar {
+    opacity: 0;
+}
+.btn-menu:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: top .3s linear, transform .3s linear;
+    transition: top .3s linear, transform .3s linear;
+    content: ''
+}
+.btn-menu.on:before {
+    top: 50%;
+    -ms-transform: rotate(45deg);
+    -webkit-transform:  rotate(45deg);
+    transform: rotate(45deg);
+}
+.btn-menu:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: top .3s linear, transform .3s linear;
+    transition: top .3s linear, transform .3s linear;
+    content: ''
+}
+.btn-menu.on:after {
+    top: 50%;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}

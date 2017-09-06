@@ -6,13 +6,14 @@ var gulp = require('gulp'),
 var PATHS = {};
 PATHS.css = ['./assets/css/partials/_reset.css',
              './assets/css/partials/_global.css',
-             './assets/css/partials/!(_global.css|_reset.css)*.css',
-             './assets/css/partials/!(_global.css|_reset.css)**/*.css',];
+             './assets/css/partials/!(_global|_reset|_responsive)*.css',
+             './assets/css/partials/*/**/*.css',
+             './assets/css/partials/_responsive.css'];
 
 gulp.task('concatCss', function() {
     return gulp.src(PATHS.css)
         .pipe(concatCss("style.css"))
-        .pipe(cleanCss())
+        // .pipe(cleanCss())
         .pipe(gulp.dest("./assets/css/"));
 });
 
@@ -25,4 +26,4 @@ gulp.task('nodemon', function() {
     });
 });
 
-gulp.task('default', gulp.series('concatCss', 'nodemon'));
+gulp.task('default', gulp.series('concatCss'));

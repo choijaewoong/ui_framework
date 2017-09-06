@@ -1,0 +1,44 @@
+@media only screen and (max-width : 1080px) { 
+    .contents {
+        padding: 0 15px;
+    }
+    .header {
+        height: 90px;
+    }
+    .header-tit {
+        width: 100%;
+        padding: 0 44px;
+    }    
+    .lnb {
+        top: 90px;
+        left: -280px;
+        opacity: 0;
+    }
+    .lnb.on {
+        opacity: 1;
+        left: 0;
+    }
+    .container {
+        margin-left: 0;
+        padding-top: 135px;
+    }
+    .footer {
+        margin-left: 0;
+    }
+    
+    .btn-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .btn-menu:before {
+        top: 4px;
+    }
+    .btn-menu:after {
+        top: 20px;
+    }
+
+    .header-menu {
+        width: 100%;
+        overflow: hidden;
+    }
+}
