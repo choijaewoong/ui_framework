@@ -4,7 +4,10 @@ var gulp = require('gulp'),
     concatCss = require('gulp-concat-css');
 
 var PATHS = {};
-PATHS.css = ['./assets/css/partials/_reset.css'];
+PATHS.css = ['./assets/css/partials/_reset.css',
+             './assets/css/partials/_global.css',
+             './assets/css/partials/!(_global.css|_reset.css)*.css',
+             './assets/css/partials/!(_global.css|_reset.css)**/*.css',];
 
 gulp.task('concatCss', function() {
     return gulp.src(PATHS.css)

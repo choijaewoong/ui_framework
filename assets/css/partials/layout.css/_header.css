@@ -1,0 +1,125 @@
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 45px;
+    background-color: #1d97e2;
+    /* -moz-box-shadow:    inset 0 -1px 10px #0d7291;
+    -webkit-box-shadow: inset 0 -1px 10px #0d7291;
+    box-shadow:         inset 0 -1px 10px #0d7291; */
+    -moz-box-shadow:    0 1px 5px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+    box-shadow:         0 1px 5px rgba(0, 0, 0, .2);
+    z-index: 100;
+}
+.header-tit {
+    float: left;
+    width: 280px;
+    height: 45px;
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 45px;
+    color: #fff ;
+    text-align: center;
+    /* -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in; */
+}
+.header-tit:before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-color: #fff ;
+    border-radius: 10px;
+    content: '';
+}
+
+.header-menu {
+    height : 45px;
+}
+.header-menu .menu-item {
+    float: left;
+}
+.header-menu .menu-link {
+    display: inline-block;
+    padding: 8px;
+    margin: 6px 10px;
+    color: #fff;
+}
+.header-menu .menu-link.on,
+.header-menu .menu-link:hover {
+    background-color: #E59A13;
+    border-radius: 8px;
+}
+
+.header-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 280px;
+}
+
+
+/* LNB */
+.lnb {
+    position: fixed;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    width: 280px;
+    padding: 20px 0;
+    background-color: #2e3c49;
+    -webkit-transition: left .3s ease-in, opacity .3s ease-in;
+    transition: left .3s ease-in, opacity .3s ease-in;
+    z-index: 90;
+}
+
+.lnb-menu .menu-link {
+    display: block;
+    position: relative;
+    padding: 0 20px;
+    line-height: 44px;
+    color: #fff;
+}
+.lnb-menu .menu-link:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 6px;
+    background-color: #E59A13;
+    content: '';
+}
+.lnb-menu .menu-link:hover:before {
+    width: 100%;
+    z-index: -1;
+    -webkit-transition: width .3s ease-in;
+    transition: width .3s ease-in;
+}
+
+.lnb-menu-sub {
+    background-color: #263238;
+}
+.lnb-menu-sub .menu-link-sub {
+    display: block;
+    padding: 0 20px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.btn-menu-lnb {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0;
+}
+
+.btn-user-lnb {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0;
+}
