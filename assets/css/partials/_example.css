@@ -1,0 +1,8 @@
+/* example을 위한 css */
+
+.contents-item.example .btn {
+    margin-bottom: 8px;
+}
+.contents-item.example .btn-group-col .btn {
+    margin: 0;
+}

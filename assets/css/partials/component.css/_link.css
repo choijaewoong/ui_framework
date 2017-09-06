@@ -1,0 +1,28 @@
+.link {
+    color: #000;
+}
+.link .txt-link{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+}
+.link .txt-link:after {
+    position: absolute;  
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #E59A13;
+    transition: all .2s linear;
+    content:'';
+}
+.link:hover .txt-link{
+    color: #E59A13;
+}  
+.link:hover .txt-link:after {
+    left: 0;
+    right: 0;
+    width: 100%;
+}

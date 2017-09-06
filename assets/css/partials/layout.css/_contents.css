@@ -1,0 +1,32 @@
+.contents { 
+    padding: 0 40px;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.contents-tit {
+    margin:10px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+.contents-tit .tit-sub {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.contents-list {
+
+}
+
+.contents-list .contents-item {
+    padding-bottom: 20px;
+}
+
+.contents-list .item-tit {
+    padding-bottom: 10px;
+    font-size: 24px;
+    color: #555;
+}
