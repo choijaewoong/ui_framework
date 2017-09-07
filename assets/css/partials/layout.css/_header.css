@@ -76,7 +76,6 @@
     transition: left .3s ease-in, opacity .3s ease-in;
     z-index: 90;
 }
-
 .lnb-menu .menu-link {
     display: block;
     position: relative;

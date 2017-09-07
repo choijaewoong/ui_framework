@@ -8,6 +8,7 @@ PATHS.css = ['./assets/css/partials/_reset.css',
              './assets/css/partials/_global.css',
              './assets/css/partials/!(_global|_reset|_responsive)*.css',
              './assets/css/partials/*/**/*.css',
+             './assets/vendors/**/*.css',
              './assets/css/partials/_responsive.css'];
 
 gulp.task('concatCss', function() {
