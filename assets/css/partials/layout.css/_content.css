@@ -1,0 +1,25 @@
+.content { 
+    padding: 0 40px;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.content-tit {
+    margin:8px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    border-bottom: 1px solid #eee;
+}
+.content-list .content-subtit {
+    padding-bottom: 8px;
+    font-size: 24px;
+    color: #222;
+}
+.content-list .list-item {
+    padding-bottom: 20px;
+}
+.content-list .item-txt {
+    padding-bottom: 8px;
+    color: #444;
+}

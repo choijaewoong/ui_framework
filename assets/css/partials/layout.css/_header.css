@@ -99,10 +99,10 @@
     transition: width .3s ease-in;
 }
 
-.lnb-menu-sub {
+.lnb-submenu {
     background-color: #263238;
 }
-.lnb-menu-sub .menu-link-sub {
+.lnb-submenu .submenu-link {
     display: block;
     padding: 0 20px;
     line-height: 36px;
