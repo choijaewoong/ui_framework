@@ -34,14 +34,15 @@ var app = (function() {
     var toggleLnbMenu = function() {
         document.querySelector('.btn-menu').addEventListener('click', function(e) {
             e.preventDefault();
-            
             if (_hasClass(this, 'on')) {
                 this.className = 'btn-menu';
                 var lnb = document.querySelector('.lnb');
+                document.body.className = '';
                 lnb.className = 'lnb';
             } else {
                 this.className = 'btn-menu on';
                 var lnb = document.querySelector('.lnb');
+                document.body.className = 'lnb-on';
                 lnb.className = 'lnb on';
             }
         });
@@ -50,13 +51,12 @@ var app = (function() {
             if(window.innerWidth > 1080) {
                 document.querySelector('.btn-menu').className = 'btn-menu';
                 var lnb = document.querySelector('.lnb');
+                document.body.className = '';
                 lnb.className = 'lnb';
             }
             console.log(window.innerWidth);
         }, 200));
     };
-
-    
 
     return {
         toggleLnbMenu: toggleLnbMenu

@@ -1,8 +1,11 @@
 .footer {
+    position: relative;
     margin-left: 280px;
     height: 45px;
     background-color: #1d97e2;
     -moz-box-shadow:    0 -1px 5px rgba(0, 0, 0, .2);
     -webkit-box-shadow: 0 -1px 5px rgba(0, 0, 0, .2);
     box-shadow:         0 -1px 5px rgba(0, 0, 0, .2);
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
 }

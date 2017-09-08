@@ -13,18 +13,17 @@ PATHS.css = ['./assets/css/partials/_reset.css',
 
 gulp.task('concatCss', function() {
     return gulp.src(PATHS.css)
-        .pipe(concatCss("style.css"))
-        // .pipe(cleanCss())
-        .pipe(gulp.dest("./assets/css/"));
+                .pipe(concatCss("style.css"))
+                .pipe(cleanCss())
+                .pipe(gulp.dest("./assets/css/"));
 });
 
 gulp.task('nodemon', function() {
+
     return nodemon({
         script: './server.js',
         ext: 'js'
-    }).on('restart', function() {
-        console.log('NODEMON RESTART :)');
-    });
+    }).on('restart', ['concatCss']);
 });
 
-gulp.task('default', gulp.series('concatCss'));
+gulp.task('default', gulp.series('nodemon'));

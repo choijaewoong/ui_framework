@@ -122,3 +122,13 @@
     right: 10px;
     font-size: 0;
 }
+
+body.lnb {
+    overflow-x: hidden;
+}
+body.lnb-on .container {
+    transform: translateX(280px);
+}
+body.lnb-on .footer {
+    transform: translateX(280px);
+}

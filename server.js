@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/assets'));
 
 var router = require('./routes')(app);
 
-var port = process.env.PORT || 8081;
+var port = process.env.PORT || 8080;
 app.listen(port, function() {
     console.log("app listening on port " + port);
 });

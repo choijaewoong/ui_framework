@@ -1,4 +1,7 @@
-@media only screen and (max-width : 1080px) { 
+@media only screen and (max-width : 1080px) {
+    body {
+        transform: translateX(0);
+    }
     .content {
         padding: 0 15px;
     }
